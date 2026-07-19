@@ -3,26 +3,15 @@ import numpy as np
 import pandas as pd
 import joblib
 
-# ---------------------------------------------------
-# PAGE CONFIGURATION
-# ---------------------------------------------------
-
 st.set_page_config(
     page_title="Diabetes Prediction System",
     page_icon="🩺",
     layout="wide"
 )
 
-# ---------------------------------------------------
-# LOAD MODEL
-# ---------------------------------------------------
-
 model = joblib.load("model_joblib.pkl")
 scaler = joblib.load("scaler.pkl")
 
-# ---------------------------------------------------
-# CUSTOM CSS
-# ---------------------------------------------------
 
 st.markdown("""
 <style>
@@ -60,10 +49,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ---------------------------------------------------
-# TITLE
-# ---------------------------------------------------
-
 st.markdown(
     '<p class="title">🩺 Diabetes Prediction System</p>',
     unsafe_allow_html=True
@@ -76,9 +61,6 @@ st.markdown(
 
 st.write("---")
 
-# ---------------------------------------------------
-# SIDEBAR
-# ---------------------------------------------------
 
 st.sidebar.title("About")
 
@@ -103,9 +85,6 @@ st.sidebar.write("---")
 
 st.sidebar.success("Enter patient details.")
 
-# ---------------------------------------------------
-# INPUT SECTION
-# ---------------------------------------------------
 
 col1, col2 = st.columns(2)
 
