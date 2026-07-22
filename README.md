@@ -117,17 +117,6 @@ streamlit run app.py
 
 ---
 
-## 📷 Screenshots
-
-Add screenshots of:
-
-- Home Page
-- User Input Form
-- Prediction Result
-- Download Report
-
----
-
 ## 🔮 Future Improvements
 
 - Random Forest and XGBoost
